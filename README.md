@@ -10,7 +10,6 @@ Another option would be to store everything under `$WORK` and to keep all your i
 
 ### Setting up your workspace
 While you're in your home directory, create a new workspace (*e.g.* `foo`) which will be your new workspace/project-directory by typing `ws_allocate foo 60` at the command line. The number indicates the lifetime of your workspace in days (see table below for a full list of commands).
->>>>>>> Inform about bw-hpc workspaces
 
 | Command                       | Action                                                      |
 |-------------------------------|-------------------------------------------------------------|
