@@ -9,7 +9,8 @@ After registering for the bwUniCluster service, one of your first steps should b
 Another option would be to store everything under `$WORK` and to keep all your important files, such as programs, under version control. Two nice hosts for version control are [Github](https://github.com) (particularly useful for files that you don't mind being shared with the public) and [Bitbucket](https://bitbucket.org) (particularly useful for private repositories that only invited participants can access). Bitbucket is especially great for users from academia since you can host an unlimited amount of private repositories and invite as many collaborators as you want without charge.
 
 ### Setting up your workspace
-While you're in your home directory, create a new workspace (*e.g.* `foo`) whill will be your new workspace/project-directory by typing `ws_allocate foo 60` at the command line. The number indicates the lifetime of your workspace in days (see table below for a full list of commands).
+While you're in your home directory, create a new workspace (*e.g.* `foo`) which will be your new workspace/project-directory by typing `ws_allocate foo 60` at the command line. The number indicates the lifetime of your workspace in days (see table below for a full list of commands).
+>>>>>>> Inform about bw-hpc workspaces
 
 | Command                       | Action                                                      |
 |-------------------------------|-------------------------------------------------------------|
@@ -25,4 +26,4 @@ Each time you log on to the server, you can easily switch to your workspace `foo
 
 The **maximum lifetime** of a workspace is **60 days** with the possibility of **three extensions**, resulting in a cumulative maximum lifetime of 240 days for a workspace. 
 
-Fore more information visi http://www.bwhpc-c5.de/wiki/index.php/BwUniCluster_Hardware_and_Architecture#File_Systems
+Fore more information visit http://www.bwhpc-c5.de/wiki/index.php/BwUniCluster_Hardware_and_Architecture#File_Systems
