@@ -45,4 +45,11 @@ sshfs ho_user@uc1.scc.kit.edu:/work/workspace/scratch/ho_user-foo-0 ~/bwUniClust
 For Windows users there seems to be a similar option: https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh
 
 
+## Running a batch job
+Running a batch job on the bwUniCluster requires two components:
+
+1.  A job script (*i.e.* a shell script), which will be used and interpreted by the MOAB job scheduler on the servers.
+2.  A program script, which contains the actual code that shall be executed. This program will evoked through the job script.
+
+You can find a step-by-step instruction for such a job script [here](moab_scheduler_example.md), the pure `.sh` script content [here](moab_mclapply.sh) and an exemplary [R script](moab_mclapply.R), which can be called through the aforementioned shell script.
 
