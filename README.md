@@ -28,8 +28,9 @@ The **maximum lifetime** of a workspace is **60 days** with the possibility of *
 Fore more information visit http://www.bwhpc-c5.de/wiki/index.php/BwUniCluster_Hardware_and_Architecture#File_Systems
 
 
+
 ## Mounting Remote File Systems
-Mounting remote file systems on the local system can alleviate some of the problems you may find when moving files between the bwUniCluster and your local hard drive. For *\*Unix* like systems, this procedure is quite easy and can be achieved with via the following steps:
+Mounting remote file systems on the local system can alleviate some of the problems you may find when moving files between the bwUniCluster and your local hard drive. For *Unix* like systems, this procedure is quite easy and can be achieved with via the following steps **from your local machine**:
 
 ```
 # Create a local directory in your home directory to mount the remote file system.
@@ -42,7 +43,6 @@ sshfs ho_user@uc1.scc.kit.edu:/work/workspace/scratch/ho_user-foo-0 ~/bwUniClust
 ```
 
 For Windows users there seems to be a similar option: https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh
-
 
 
 
