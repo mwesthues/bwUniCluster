@@ -1,7 +1,8 @@
 # Example for a MOAB scheduler job script. 
 
-1. The first part is a step-by-step instruction on setting up a MOAB job scheduler script. 
-2. The second part contains the original MOAB job scheduler script without interjectional remarks.
+This document is a step-by-step instruction on setting up a MOAB job scheduler script. 
+The shell script itself can be found [here](moab_mclapply.sh) in case you want 
+to run it yourself.
 
 ## Step-by-step set-up description
 The first line is required in order to tell the program interpreter that this file is a shell script.
@@ -106,56 +107,4 @@ module load math/R/3.2.1
 startprog="Rscript --no-save --no-restore --slave\
            ./path/to/script/my_r_script.R\
            ${SPECIES} ${TRIALS}"
-```
-
-### Some more optional output that can be send to the log file.
-```
-echo $startprog
-echo $(date)
-exec $startprog
-echo $(date)
-```
-
-
-## The entire shell script
-```
-#!/bin/sh 
-# MOAB job scheduler variables
-#MOAB -N r-parallel-trial
-#MOAB -l nodes=1:ppn=8
-#MOAB -l pmem=1800mb
-#MOAB -l walltime=00:00:00:20
-#MOAB -d /pfs/work2/workspace/scratch/ho_westhues-silomais_pred2015-0/silomais_pred2015
-#MOAB -o $(JOBNAME)_$(JOBID)
-#MOAB -q develop
-#MOAB -m bae
-#MOAB -j oe
-
-# User defined variables
-#MOAB -v SPECIES=setosa
-#MOAB -v TRIALS=10000
-##### **********************************************************************
-########### End MOAB header ##########
-
-echo "Working Directory:                    $PWD"
-echo "Running on host                       $HOSTNAME"
-echo "Job id:                               $MOAB_JOBID"
-echo "Job name:                             $MOAB_JOBNAME"
-echo "Number of nodes allocated to job:     $MOAB_NODECOUNT"
-echo "Number of cores allocated to job:     $MOAB_PROCCOUNT"
-
-# Echo input variables
-echo "Species=${SPECIES} \
-      Trials=${TRIALS}" 
-
-module load math/R/3.2.1
-
-startprog="Rscript --no-save --no-restore --slave\
-           ./path/to/script/my_r_script.R\
-           ${SPECIES} ${TRIALS}"
-
-echo $startprog
-echo $(date)
-exec $startprog
-echo $(date)
 ```
