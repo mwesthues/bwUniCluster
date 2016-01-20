@@ -1,6 +1,8 @@
 # bwUniCluster
 Instructions and hints for work on the bwUniCluster
 
+The basic operating system on each node of the bwUniCluster is Red Hat Enterprise Linux 6.5. If you do not have any experience with navigating on a *Unix*-like operating systems, check out this [brief introduction to the shell](shell_command_intro.md).
+
 ## Workspaces
 ### Rationale
 After registering for the bwUniCluster service, one of your first steps should be the creation of your own workspace. The reason behind this is that all of your data and files that are stored under `$WORK` are not backed up whereas files under `$HOME` are. This has important effects on the performance of the service, particularly when you make lots of use of extensive I/O operations, *i.e.* saving, reading and moving files. The suggested best practice is to store important and comparatively small files in your `$HOME` directory and your large data sets under `$WORK`.
