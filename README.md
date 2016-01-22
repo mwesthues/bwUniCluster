@@ -259,3 +259,11 @@ suffix).
 | `mjobctl -c <job-ID>`        | Abort a job.                                                                 |
 
 For more information visit http://www.bwhpc-c5.de/wiki/index.php/Batch_Jobs.
+
+
+## Software modules
+In order for your programs to be executed, you will need to load software modules first.
+For example, if you want to run an `R` program you will have to load it into the shell environment first by running `module load /math/R`, first. 
+For several modules there are multiple versions available. 
+Run `module avail` to check, which software is available.
+If you schedule your jobs via a job script you will have to write the `module load <category>/<software_name>/<version>` command into the [shell script](moab_mclapply.sh).
