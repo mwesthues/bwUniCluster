@@ -244,3 +244,18 @@ msub
 
 Note, that for an interactive session you do not call a job script (with a '.sh'
 suffix).  
+
+
+## Check/change status of your jobs
+
+| Command                      | Action                                                                       |
+|------------------------------|------------------------------------------------------------------------------|
+| `showq`                      | All **your** active, eligible or blocked jobs.                               |
+| `showstart <job-ID`          | Get information about estimated start time.                                  |
+| `showstart<procs>@<seconds>` | Display estimated start time for job requiring <br> `<procs>` cores for `<seconds>`. |
+| `showbf`                     | Get information about available resources.                                   |
+| `checkjob <job-ID>`          | Get detailed information on your job.                                        |
+| `showq -c`                   | Display completed jobs.                                                      |
+| `mjobctl -c <job-ID>`        | Abort a job.                                                                 |
+
+For more information visit http://www.bwhpc-c5.de/wiki/index.php/Batch_Jobs.
