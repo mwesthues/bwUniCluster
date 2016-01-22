@@ -75,7 +75,6 @@ Running a batch job on the bwUniCluster requires two components:
 
 You can find a step-by-step instruction for such a job script [here](moab_scheduler_example.md), the pure `.sh` script content [here](moab_mclapply.sh) and an exemplary [R script](moab_mclapply.R), which can be called through the aforementioned shell script.
 
-<<<<<<< HEAD
 
 ## Running a batch job (from the command line).
 Any job can also be started directly from the command line using the same
@@ -131,7 +130,6 @@ fix it:
 
 ```
 msub -I -V -X -l walltime=00:00:15:00,mem=4gb,nodes=1:ppn=1 -q develop
-```
 
 # command to run a job (batch or interactivley) on the server
 msub
