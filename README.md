@@ -5,6 +5,15 @@ The basic operating system on each node of the bwUniCluster is Red Hat Enterpris
  If you do not have any experience with navigating on a *Unix*-like operating systems, check out this [brief introduction to the shell](shell_command_intro.md).
 
 ## Access to the bwUniCluster
+### Application for bwUniCluster Entitlement
+https://kim.uni-hohenheim.de/fileadmin/einrichtungen/kim-relaunch/dateien/formulare/kim-form-bwHPC.pdf
+
+### Web Registration for bwUniCluster
+https://bwidm.scc.kit.edu/
+
+### bwUniCluster questionnaire
+https://bwhpc-c5.de/ZAS/bwunicluster_umfrage.php
+
 Once you have registered as a user for the bwUniCluster you will be assigned your own username, which is your current username at the University of Hohenheim, preceded by `ho_` (*e.g.* `ho_user`). You can then access the server via `ssh` as follows:
 ```
 ssh ho_user@scc.kit.edu
