@@ -183,3 +183,22 @@ For example, if you want to run an `R` program you will have to load it into the
 For several modules there are multiple versions available. 
 Run `module avail` to check, which software is available.
 If you schedule your jobs via a job script you will have to write the `module load <category>/<software_name>/<version>` command into the [shell script](moab_mclapply.sh).
+
+
+## GNU parallel
+
+GNU parallel can be used to parallelize single commands or scripts. 
+It can help you with your daily working activties by speeding up routine tasks such as compressing, finding or downloading files.
+GNU parallel is also usefull if you want to run an e.g. one R script multiple times with changing input variables. 
+Examples for such a task are the parallelization of the cross-validation for model validation in a genomic prediction framework or the parallelization of an association study by running e.g. one script for each chromsome.
+If you want to know more about it follow the Reader's guide provided by the authors:
+
+
+### Reader's guide
+
+1. Start by watching the intro videos for a quick [introduction](http://www.youtube.com/playlist?list=PL284C9FF2488BC6D1).
+2. Then look at the [examples](https://www.gnu.org/software/parallel/man.html) after the list of OPTIONS. That will give you an idea of what GNU parallel is capable of.
+3. Then spend an hour walking through the [tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html). Your command line will love you for it.
+4. Finally you may want to look at the rest of this manual if you have special needs not already covered.
+If you want to know the design decisions behind GNU parallel, try: man parallel_design. This is also a good intro if you intend to change GNU parallel.
+
